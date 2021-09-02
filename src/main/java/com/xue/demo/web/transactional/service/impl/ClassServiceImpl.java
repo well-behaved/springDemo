@@ -5,6 +5,8 @@ import com.xue.demo.web.transactional.dao.ClassDao;
 import com.xue.demo.web.transactional.dto.ClassDo;
 import com.xue.demo.web.transactional.service.ClassService;
 import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -13,7 +15,9 @@ import org.springframework.transaction.annotation.Transactional;
  * @Description:
  */
 @Data
+@Service
 public class ClassServiceImpl implements ClassService {
+    @Autowired
     private ClassDao classDao;
 
     @Override
