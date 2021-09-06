@@ -27,6 +27,6 @@ public class DemoController {
         ClassDo demoDo = new ClassDo();
         demoDo.setClassId(new Random().nextInt(1000)+"");
         demoDo.setClassName("班级名和曾呢");
-        return classService.addOne(demoDo);
+        return classService.addOneAnnotation(demoDo);
     }
 }
