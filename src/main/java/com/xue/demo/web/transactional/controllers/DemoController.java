@@ -29,4 +29,13 @@ public class DemoController {
         demoDo.setClassName("班级名和曾呢");
         return classService.addOneAnnotation(demoDo);
     }
+
+    /**
+     * 添加一个
+     * @return
+     */
+    @GetMapping("/demo11")
+    public String demo11() {
+      return "123123123";
+    }
 }
